@@ -7,6 +7,11 @@ platform:
   arch: arm64
 
 steps:
+- name: message
+  image: busybox
+  commands:
+  - echo "Hello World"
+
 - name: test
   image: node
   commands:
